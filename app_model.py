@@ -16,7 +16,88 @@ app.config['DEBUG'] = False
 # Enruta la landing page (endpoint /)
 @app.route('/', methods=['GET'])
 def hello():
-    return "Bienvenido a mi genial API del mejor modelo de advertising de todos los tiempos"
+    return '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Prediction - Retro Style</title>
+    <style>
+        body {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #e74c3c;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: #16a085;
+            color: #ecf0f1;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1abc9c;
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        .neon-text {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            color: #f39c12;
+            text-shadow: 0 0 5px #f1c40f, 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #e67e22, 0 0 40px #d35400;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-text">Welcome to Revenue Predictor</h1>
+        <p>Your retro-style tool to forecast revenue based on TV, Radio, and Newspaper investments.</p>
+        <button class="button" onclick="alert('Let\'s predict some revenue!')">Get Started</button>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Revenue Predictor | Designed with <span style="color: #e74c3c;">♥</span> in Retro Style</p>
+    </div>
+</body>
+</html>
+'''
 
 # Enruta la funcion al endpoint /api/v1/predict
 @app.route('/api/v1/predict', methods=['GET'])

@@ -16,7 +16,7 @@ app.config['DEBUG'] = False
 # Enruta la landing page (endpoint /)
 @app.route('/', methods=['GET'])
 def hello():
-    return "Bienvenido a mi API del modelo advertising"
+    return "Bienvenido a mi genial API del mejor modelo de advertising de todos los tiempos"
 
 # Enruta la funcion al endpoint /api/v1/predict
 @app.route('/api/v1/predict', methods=['GET'])

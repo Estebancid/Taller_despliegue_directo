@@ -89,11 +89,11 @@ def hello():
 <body>
     <div class="container">
         <h1 class="neon-text">Welcome to Revenue Predictor</h1>
-        <p>Your retro-style tool to forecast revenue based on TV, Radio, and Newspaper investments.</p>
+        <p>The best tool to forecast revenue based on TV, Radio, and Newspaper investments.</p>
         <button class="button" onclick="alert('Let\'s predict some revenue!')">Get Started</button>
     </div>
     <div class="footer">
-        <p>&copy; 2025 Revenue Predictor | Designed with <span style="color: #e74c3c;">♥</span> in Retro Style</p>
+        <p>&copy; 2025 Revenue Predictor | Designed with <span style="color: #e74c3c;">♥</span> for your company</p>
     </div>
 </body>
 </html>
